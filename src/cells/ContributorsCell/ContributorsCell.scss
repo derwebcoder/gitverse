@@ -1,0 +1,11 @@
+.ContributorsCell {
+  & > h1 {
+    font-size: var(--font-size-5);
+    margin-bottom: var(--size-5);
+  }
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.u-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.u-statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-1);
+  font-size: var(--font-size-5);
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--size-2);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.u-card {
+  background: var(--gray-0);
+  padding: var(--size-5);
+  border-radius: var(--radius-3);
+  color: var(--gray-7);
+  box-shadow: var(--shadow-5);
+}
+
+.u-scale-on-hover {
+  transition: transform 0.1s, box-shadow 0.1s;
+
+  &:hover,
+  &:focus-within {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-6);
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+}

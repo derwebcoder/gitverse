@@ -1,0 +1,14 @@
+.ErrorInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-2);
+
+  svg {
+    stroke: var(--orange-5);
+  }
+
+  .reason {
+    font-weight: var(--font-weight-5);
+  }
+}

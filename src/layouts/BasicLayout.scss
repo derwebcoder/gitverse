@@ -1,0 +1,16 @@
+.BasicLayout {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 200px;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+}

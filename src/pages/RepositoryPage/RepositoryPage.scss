@@ -1,0 +1,24 @@
+.RepositoryPage {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: max-content max-content;
+  grid-template-areas:
+    "repository contributors"
+    "readme contributors";
+  gap: var(--size-8);
+  padding: 0 var(--size-fluid-5);
+  margin-bottom: var(--size-8);
+
+  .RepositoryCard {
+    grid-area: repository;
+  }
+
+  .Readme {
+    grid-area: readme;
+  }
+
+  .ContributorsCell {
+    grid-area: contributors;
+    height: fit-content;
+  }
+}

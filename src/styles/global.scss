@@ -1,0 +1,28 @@
+@import "open-props/style";
+@import "open-props/normalize";
+
+@import "./utilities.scss";
+
+h1 {
+  padding: var(--size-00);
+  margin: var(--size-00);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto;
+  }
+
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+// Resetting some open props normalize stuff that's not working with lucide icons
+svg {
+  max-inline-size: none;
+  fill: none;
+  stroke: var(--gray-9);
+}

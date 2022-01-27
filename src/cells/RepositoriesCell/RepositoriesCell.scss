@@ -1,0 +1,11 @@
+.RepositoriesCell {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    max-inline-size: none;
+    padding-inline-start: 0;
+    margin-bottom: var(--size-5);
+  }
+}
